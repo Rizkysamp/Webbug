@@ -1,19 +1,19 @@
-&#x3C;!DOCTYPE html&#x3E;&#x3C;html lang=&#x22;id&#x22;&#x3E;
-&#x3C;head&#x3E;
-  &#x3C;meta charset=&#x22;UTF-8&#x22; /&#x3E;
-  &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22; /&#x3E;
-  &#x3C;title&#x3E;Sahas Secure Defaceer&#x3C;/title&#x3E;
-  &#x3C;!-- Google Font &#x26; Font Awesome --&#x3E;
-  &#x3C;link href=&#x22;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&#x26;display=swap&#x22; rel=&#x22;stylesheet&#x22; /&#x3E;
-  &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css&#x22; crossorigin=&#x22;anonymous&#x22; /&#x3E;
-  &#x3C;style&#x3E;
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahas Secure Defaceer</title>
+  <!-- Google Font & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <style>
     /* ============== TOKENS ============== */
     :root{
       --brand-500:#2563eb;--brand-600:#1d4ed8;
       --success-500:#16a34a;--error-500:#dc2626;
       --grey-900:#0f0f0f;--grey-800:#1a1a1a;--grey-700:#252525;--grey-600:#3a3a3a;--grey-300:#d4d4d4;--white:#ffffff;
       --radius-s:8px;--radius-m:12px;--shadow-m:0 2px 5px rgba(0,0,0,.35);
-      --font:&#x27;Inter&#x27;,system-ui,sans-serif;--text-base:15px;
+      --font:'Inter',system-ui,sans-serif;--text-base:15px;
     }/* RESET */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 body{font-family:var(--font);background:var(--grey-900);color:var(--white);min-height:100vh;display:flex;flex-direction:column;line-height:1.5;overflow-x:hidden}
@@ -38,7 +38,7 @@ h2{font-size:18px;font-weight:600;margin-bottom:18px;display:flex;align-items:ce
 .hidden{display:none!important}
 
 /* FORM */
-input[type=&#x22;text&#x22;],input[type=&#x22;password&#x22;]{width:100%;padding:13px 14px;background:var(--grey-600);color:var(--white);border-radius:var(--radius-s);border:1px solid transparent;font-size:var(--text-base);transition:border .2s}
+input[type="text"],input[type="password"]{width:100%;padding:13px 14px;background:var(--grey-600);color:var(--white);border-radius:var(--radius-s);border:1px solid transparent;font-size:var(--text-base);transition:border .2s}
 input:focus{outline:none;border-color:var(--brand-500)}
 
 .btn{display:flex;align-items:center;justify-content:center;gap:6px;margin:18px auto 0;padding:12px 22px;background:var(--brand-500);color:#fff;font-size:var(--text-base);font-weight:500;border-radius:var(--radius-s);transition:background .25s,transform .25s;width:fit-content}
@@ -46,7 +46,7 @@ input:focus{outline:none;border-color:var(--brand-500)}
 .btn.secondary{background:var(--grey-600)}.btn.secondary:hover{background:var(--grey-300);color:var(--grey-900);transform:none}
 @media(max-width:480px){.btn{width:100%}}
 
-/* SAHAS PRODUCT &#x2013; Feature list */
+/* SAHAS PRODUCT – Feature list */
 .feature-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;padding-left:0}
 .feature-list li{display:flex;align-items:flex-start;gap:10px;list-style:none;background:var(--grey-600);padding:10px 14px;border-radius:var(--radius-s);box-shadow:var(--shadow-m);transition:transform .25s}
 .feature-list li:hover{transform:translateY(-3px)}
@@ -63,158 +63,158 @@ input:focus{outline:none;border-color:var(--brand-500)}
 @keyframes fadeUp{0%{opacity:0;transform:translateY(20px)}100%{opacity:1;transform:translateY(0)}}
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
 
-  &#x3C;/style&#x3E;
-&#x3C;/head&#x3E;
-&#x3C;body&#x3E;
-  &#x3C;!-- HEADER --&#x3E;
-  &#x3C;header&#x3E;
-    &#x3C;div class=&#x22;brand&#x22;&#x3E;&#x3C;img src=&#x22;https://files.catbox.moe/da6uqg.jpg&#x22; alt=&#x22;logo&#x22;&#x3E;&#x3C;span&#x3E;SAHASSITE&#x3C;/span&#x3E;&#x3C;/div&#x3E;
-    &#x3C;button id=&#x22;musicToggle&#x22; class=&#x22;btn secondary&#x22; onclick=&#x22;toggleMusic()&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-volume-mute&#x22;&#x3E;&#x3C;/i&#x3E; MUSIC&#x3C;/button&#x3E;
-  &#x3C;/header&#x3E;  &#x3C;!-- MAIN --&#x3E;  &#x3C;main&#x3E;
-    &#x3C;div class=&#x22;wrapper&#x22;&#x3E;
-      &#x3C;!-- ABOUT --&#x3E;
-      &#x3C;section class=&#x22;card&#x22;&#x3E;
-        &#x3C;h2&#x3E;&#x3C;i class=&#x22;fas fa-circle-info&#x22;&#x3E;&#x3C;/i&#x3E;Tentang Panel&#x3C;/h2&#x3E;
-        &#x3C;p class=&#x22;muted&#x22;&#x3E;Sahas Secure Access Panel adalah platform eksklusif untuk pengujian keamanan, serangan, dan pembangunan payload.&#x3C;/p&#x3E;
-      &#x3C;/section&#x3E;&#x3C;!-- LOGIN --&#x3E;
-  &#x3C;section id=&#x22;loginSection&#x22; class=&#x22;card&#x22;&#x3E;
-    &#x3C;h2&#x3E;&#x3C;i class=&#x22;fas fa-lock&#x22;&#x3E;&#x3C;/i&#x3E;Secure Login&#x3C;/h2&#x3E;
-    &#x3C;p class=&#x22;muted&#x22;&#x3E;Masukkan kata sandi.&#x3C;/p&#x3E;
-    &#x3C;input id=&#x22;passInput&#x22; type=&#x22;password&#x22; placeholder=&#x22;Password&#x22; autocomplete=&#x22;off&#x22;&#x3E;
-    &#x3C;button class=&#x22;btn&#x22; onclick=&#x22;firstStep()&#x22;&#x3E;Next&#x3C;/button&#x3E;
-  &#x3C;/section&#x3E;
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="brand"><img src="https://files.catbox.moe/da6uqg.jpg" alt="logo"><span>SAHASSITE</span></div>
+    <button id="musicToggle" class="btn secondary" onclick="toggleMusic()"><i class="fas fa-volume-mute"></i> MUSIC</button>
+  </header>  <!-- MAIN -->  <main>
+    <div class="wrapper">
+      <!-- ABOUT -->
+      <section class="card">
+        <h2><i class="fas fa-circle-info"></i>Tentang Panel</h2>
+        <p class="muted">Sahas Secure Access Panel adalah platform eksklusif untuk pengujian keamanan, serangan, dan pembangunan payload.</p>
+      </section><!-- LOGIN -->
+  <section id="loginSection" class="card">
+    <h2><i class="fas fa-lock"></i>Secure Login</h2>
+    <p class="muted">Masukkan kata sandi.</p>
+    <input id="passInput" type="password" placeholder="Password" autocomplete="off">
+    <button class="btn" onclick="firstStep()">Next</button>
+  </section>
 
-  &#x3C;!-- SAHAS PRODUCT (disembunyikan saat 2FA &#x26; setelah login) --&#x3E;
-  &#x3C;section class=&#x22;card&#x22; id=&#x22;productSection&#x22;&#x3E;
-  &#x3C;h2&#x3E;&#x3C;i class=&#x22;fas fa-toolbox&#x22;&#x3E;&#x3C;/i&#x3E;Sahas Product &#x3C;span class=&#x22;badge&#x22;&#x3E;NEW&#x3C;/span&#x3E;&#x3C;/h2&#x3E;
-  &#x3C;p class=&#x22;muted&#x22;&#x3E;Platform &#x3C;strong&#x3E;Sahas Secure Access Panel&#x3C;/strong&#x3E; untuk pengujian keamanan, serangan, dan pembuatan payload instan.&#x3C;/p&#x3E;
-  &#x3C;ul class=&#x22;feature-list&#x22;&#x3E;
-    &#x3C;li&#x3E;&#x3C;i class=&#x22;fas fa-shield-halved&#x22;&#x3E;&#x3C;/i&#x3E; Login Aman + 2FA&#x3C;/li&#x3E;
-    &#x3C;li&#x3E;&#x3C;i class=&#x22;fas fa-bolt&#x22;&#x3E;&#x3C;/i&#x3E; Attack Console (Crash &#x26; Force Payload)&#x3C;/li&#x3E;
-    &#x3C;li&#x3E;&#x3C;i class=&#x22;fas fa-bug-slash&#x22;&#x3E;&#x3C;/i&#x3E; Builder Payload Otomatis&#x3C;/li&#x3E;
-    &#x3C;li&#x3E;&#x3C;i class=&#x22;fas fa-star&#x22;&#x3E;&#x3C;/i&#x3E; Akses Premium (TRHEXS Certified)&#x3C;/li&#x3E;
-    &#x3C;li&#x3E;&#x3C;i class=&#x22;fas fa-headset&#x22;&#x3E;&#x3C;/i&#x3E; Support CS &#x26; Grup Diskusi&#x3C;/li&#x3E;
-  &#x3C;/ul&#x3E;
-  &#x3C;a href=&#x22;https://wa.me/6288991233030&#x22; target=&#x22;_blank&#x22; class=&#x22;btn&#x22;&#x3E;
-    &#x3C;i class=&#x22;fas fa-rocket&#x22;&#x3E;&#x3C;/i&#x3E; Get Started
-  &#x3C;/a&#x3E;
-&#x3C;/section&#x3E;
+  <!-- SAHAS PRODUCT (disembunyikan saat 2FA & setelah login) -->
+  <section class="card" id="productSection">
+  <h2><i class="fas fa-toolbox"></i>Sahas Product <span class="badge">NEW</span></h2>
+  <p class="muted">Platform <strong>Sahas Secure Access Panel</strong> untuk pengujian keamanan, serangan, dan pembuatan payload instan.</p>
+  <ul class="feature-list">
+    <li><i class="fas fa-shield-halved"></i> Login Aman + 2FA</li>
+    <li><i class="fas fa-bolt"></i> Attack Console (Crash & Force Payload)</li>
+    <li><i class="fas fa-bug-slash"></i> Builder Payload Otomatis</li>
+    <li><i class="fas fa-star"></i> Akses Premium (TRHEXS Certified)</li>
+    <li><i class="fas fa-headset"></i> Support CS & Grup Diskusi</li>
+  </ul>
+  <a href="https://wa.me/6288991233030" target="_blank" class="btn">
+    <i class="fas fa-rocket"></i> Get Started
+  </a>
+</section>
 
-  &#x3C;!-- TWO-FACTOR AUTH --&#x3E;
-  &#x3C;section id=&#x22;codeSection&#x22; class=&#x22;card hidden&#x22;&#x3E;
-    &#x3C;h2&#x3E;&#x3C;i class=&#x22;fas fa-shield&#x22;&#x3E;&#x3C;/i&#x3E;Two-Factor Authentication&#x3C;/h2&#x3E;
-    &#x3C;p class=&#x22;muted&#x22;&#x3E;Masukkan kode 2FA.&#x3C;/p&#x3E;
-    &#x3C;input id=&#x22;codeInput&#x22; type=&#x22;text&#x22; placeholder=&#x22;Kode 2FA&#x22;&#x3E;
-    &#x3C;button class=&#x22;btn&#x22; onclick=&#x22;verifyCode()&#x22;&#x3E;Verify&#x3C;/button&#x3E;
-  &#x3C;/section&#x3E;
+  <!-- TWO-FACTOR AUTH -->
+  <section id="codeSection" class="card hidden">
+    <h2><i class="fas fa-shield"></i>Two-Factor Authentication</h2>
+    <p class="muted">Masukkan kode 2FA.</p>
+    <input id="codeInput" type="text" placeholder="Kode 2FA">
+    <button class="btn" onclick="verifyCode()">Verify</button>
+  </section>
 
-  &#x3C;!-- ATTACK CONSOLE --&#x3E;
-  &#x3C;section id=&#x22;attackSection&#x22; class=&#x22;card hidden&#x22;&#x3E;
-    &#x3C;h2&#x3E;&#x3C;i class=&#x22;fas fa-bug&#x22;&#x3E;&#x3C;/i&#x3E;Attack Console&#x3C;/h2&#x3E;
-    &#x3C;input id=&#x22;targetNumber&#x22; type=&#x22;text&#x22; placeholder=&#x22;Nomor Target (62xxx)&#x22;&#x3E;
-    &#x3C;button class=&#x22;btn&#x22; onclick=&#x22;sendBug(&#x27;FORCE ATTACK&#x27;)&#x22;&#x3E;FORCE ATTACK&#x3C;/button&#x3E;
-    &#x3C;button class=&#x22;btn&#x22; onclick=&#x22;sendBug(&#x27;CRASH ATTACK&#x27;)&#x22;&#x3E;CRASH ATTACK&#x3C;/button&#x3E;
-  &#x3C;/section&#x3E;
+  <!-- ATTACK CONSOLE -->
+  <section id="attackSection" class="card hidden">
+    <h2><i class="fas fa-bug"></i>Attack Console</h2>
+    <input id="targetNumber" type="text" placeholder="Nomor Target (62xxx)">
+    <button class="btn" onclick="sendBug('FORCE ATTACK')">FORCE ATTACK</button>
+    <button class="btn" onclick="sendBug('CRASH ATTACK')">CRASH ATTACK</button>
+  </section>
 
-  &#x3C;!-- ACCOUNT --&#x3E;
-  &#x3C;section id=&#x22;accountSection&#x22; class=&#x22;card hidden&#x22;&#x3E;
-    &#x3C;h2&#x3E;&#x3C;i class=&#x22;fas fa-user&#x22;&#x3E;&#x3C;/i&#x3E;Akun&#x3C;/h2&#x3E;
-    &#x3C;p&#x3E;ID: &#x3C;strong&#x3E;SAHAS01&#x3C;/strong&#x3E;&#x3C;/p&#x3E;
-    &#x3C;p&#x3E;Status: Premium&#x3C;/p&#x3E;
-    &#x3C;button class=&#x22;btn&#x22; onclick=&#x22;showToast(&#x27;Fitur segera hadir&#x27;)&#x22;&#x3E;Kelola Profil&#x3C;/button&#x3E;
-  &#x3C;/section&#x3E;
+  <!-- ACCOUNT -->
+  <section id="accountSection" class="card hidden">
+    <h2><i class="fas fa-user"></i>Akun</h2>
+    <p>ID: <strong>SAHAS01</strong></p>
+    <p>Status: Premium</p>
+    <button class="btn" onclick="showToast('Fitur segera hadir')">Kelola Profil</button>
+  </section>
 
-  &#x3C;!-- CONTACT --&#x3E;
-  &#x3C;section id=&#x22;contactSection&#x22; class=&#x22;card hidden&#x22;&#x3E;
-    &#x3C;h2&#x3E;&#x3C;i class=&#x22;fas fa-headset&#x22;&#x3E;&#x3C;/i&#x3E;Customer Service&#x3C;/h2&#x3E;
-    &#x3C;p class=&#x22;muted&#x22;&#x3E;Hubungi:&#x3C;/p&#x3E;
-    &#x3C;div style=&#x22;display:flex;flex-direction:column;gap:6px&#x22;&#x3E;
-      &#x3C;a href=&#x22;https://wa.me/6288991233030&#x22; target=&#x22;_blank&#x22;&#x3E;Owner&#x3C;/a&#x3E;
-      &#x3C;a href=&#x22;https://wa.me/6288991233030&#x22; target=&#x22;_blank&#x22;&#x3E;Customer Service&#x3C;/a&#x3E;
-      &#x3C;a href=&#x22;https://chat.whatsapp.com/xxxx&#x22; target=&#x22;_blank&#x22;&#x3E;Grup WhatsApp&#x3C;/a&#x3E;
-    &#x3C;/div&#x3E;
-  &#x3C;/section&#x3E;
-&#x3C;/div&#x3E;
+  <!-- CONTACT -->
+  <section id="contactSection" class="card hidden">
+    <h2><i class="fas fa-headset"></i>Customer Service</h2>
+    <p class="muted">Hubungi:</p>
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <a href="https://wa.me/6288991233030" target="_blank">Owner</a>
+      <a href="https://wa.me/6288991233030" target="_blank">Customer Service</a>
+      <a href="https://chat.whatsapp.com/xxxx" target="_blank">Grup WhatsApp</a>
+    </div>
+  </section>
+</div>
 
-  &#x3C;/main&#x3E;  &#x3C;footer&#x3E;&#xA9; 2025 &#x2022; Sahas. All Rights Reserved.&#x3C;/footer&#x3E;  &#x3C;!-- MUSIC --&#x3E;  &#x3C;audio id=&#x22;bgmusic&#x22; autoplay loop muted&#x3E;
-    &#x3C;source src=&#x22;https://files.catbox.moe/chyczo.mp3&#x22; type=&#x22;audio/mpeg&#x22;&#x3E;
-  &#x3C;/audio&#x3E;  &#x3C;script&#x3E;
-    const PASSWORD = &#x27;SAHASV1&#x27;;
-    const CODE      = &#x27;SAHASOFFC&#x27;;
+  </main>  <footer>© 2025 • Sahas. All Rights Reserved.</footer>  <!-- MUSIC -->  <audio id="bgmusic" autoplay loop muted>
+    <source src="https://files.catbox.moe/chyczo.mp3" type="audio/mpeg">
+  </audio>  <script>
+    const PASSWORD = 'SAHASV1';
+    const CODE      = 'SAHASOFFC';
 
-    const loginSec   = document.getElementById(&#x27;loginSection&#x27;);
-    const codeSec    = document.getElementById(&#x27;codeSection&#x27;);
-    const productSec = document.getElementById(&#x27;productSection&#x27;);
-    const attackSec  = document.getElementById(&#x27;attackSection&#x27;);
-    const accountSec = document.getElementById(&#x27;accountSection&#x27;);
-    const contactSec = document.getElementById(&#x27;contactSection&#x27;);
+    const loginSec   = document.getElementById('loginSection');
+    const codeSec    = document.getElementById('codeSection');
+    const productSec = document.getElementById('productSection');
+    const attackSec  = document.getElementById('attackSection');
+    const accountSec = document.getElementById('accountSection');
+    const contactSec = document.getElementById('contactSection');
 
-    const music    = document.getElementById(&#x27;bgmusic&#x27;);
-    const musicBtn = document.getElementById(&#x27;musicToggle&#x27;);
+    const music    = document.getElementById('bgmusic');
+    const musicBtn = document.getElementById('musicToggle');
 
     /* --- Toggle Music --- */
     function toggleMusic(){
       if(music.paused){
         music.muted = false;
-        music.play().catch(()=&#x3E;{});
-        musicBtn.innerHTML = &#x27;&#x3C;i class=&#x22;fas fa-volume-up&#x22;&#x3E;&#x3C;/i&#x3E; MUSIC&#x27;;
-        showToast(&#x27;Music ON&#x27;,&#x27;success&#x27;);
+        music.play().catch(()=>{});
+        musicBtn.innerHTML = '<i class="fas fa-volume-up"></i> MUSIC';
+        showToast('Music ON','success');
       }else{
         music.pause();
         music.muted = true;
-        musicBtn.innerHTML = &#x27;&#x3C;i class=&#x22;fas fa-volume-mute&#x22;&#x3E;&#x3C;/i&#x3E; MUSIC&#x27;;
-        showToast(&#x27;Music OFF&#x27;,&#x27;info&#x27;);
+        musicBtn.innerHTML = '<i class="fas fa-volume-mute"></i> MUSIC';
+        showToast('Music OFF','info');
       }
     }
 
     /* --- Toast helper --- */
-    function showToast(msg,type=&#x27;info&#x27;){
-      const t = document.createElement(&#x27;div&#x27;);
-      t.className = &#x27;toast &#x27;+(type===&#x27;success&#x27;?&#x27;success&#x27;:type===&#x27;error&#x27;?&#x27;error&#x27;:&#x27;&#x27;);
+    function showToast(msg,type='info'){
+      const t = document.createElement('div');
+      t.className = 'toast '+(type==='success'?'success':type==='error'?'error':'');
       t.textContent = msg;
       document.body.appendChild(t);
-      setTimeout(()=&#x3E;t.classList.add(&#x27;show&#x27;),10);
-      setTimeout(()=&#x3E;{t.classList.remove(&#x27;show&#x27;);setTimeout(()=&#x3E;t.remove(),300)},3000);
+      setTimeout(()=>t.classList.add('show'),10);
+      setTimeout(()=>{t.classList.remove('show');setTimeout(()=>t.remove(),300)},3000);
     }
 
     /* --- Login Step 1 --- */
     function firstStep(){
-      const pw = document.getElementById(&#x27;passInput&#x27;).value;
+      const pw = document.getElementById('passInput').value;
       if(pw === PASSWORD){
-        loginSec.classList.add(&#x27;hidden&#x27;);
-        productSec.classList.add(&#x27;hidden&#x27;); // hilangkan Sahas Product di halaman 2FA
-        codeSec.classList.remove(&#x27;hidden&#x27;);
-        showToast(&#x27;Hubungi Owner!!&#x27;,&#x27;success&#x27;);
+        loginSec.classList.add('hidden');
+        productSec.classList.add('hidden'); // hilangkan Sahas Product di halaman 2FA
+        codeSec.classList.remove('hidden');
+        showToast('Hubungi Owner!!','success');
       }else{
-        showToast(&#x27;Password salah!&#x27;,&#x27;error&#x27;);
+        showToast('Password salah!','error');
       }
     }
 
     /* --- Verify 2FA --- */
     function verifyCode(){
-      const k = document.getElementById(&#x27;codeInput&#x27;).value.trim();
+      const k = document.getElementById('codeInput').value.trim();
       if(k === CODE){
-        codeSec.classList.add(&#x27;hidden&#x27;);
-        [attackSec,accountSec,contactSec].forEach(e=&#x3E;e.classList.remove(&#x27;hidden&#x27;));
+        codeSec.classList.add('hidden');
+        [attackSec,accountSec,contactSec].forEach(e=>e.classList.remove('hidden'));
         toggleMusic();
-        showToast(&#x27;Autentikasi berhasil&#x27;,&#x27;success&#x27;);
+        showToast('Autentikasi berhasil','success');
       }else{
-        showToast(&#x27;Kode salah!&#x27;,&#x27;error&#x27;);
+        showToast('Kode salah!','error');
       }
     }
 
     /* --- Attack Dummy --- */
     function sendBug(type){
-      const num = document.getElementById(&#x27;targetNumber&#x27;).value.trim();
-      if(!num){showToast(&#x27;Masukkan nomor target!&#x27;,&#x27;error&#x27;);return;}
-      showToast(&#x27;SUCCESSFULLY&#x27;,&#x27;success&#x27;);
+      const num = document.getElementById('targetNumber').value.trim();
+      if(!num){showToast('Masukkan nomor target!','error');return;}
+      showToast('SUCCESSFULLY','success');
     }
 
     /* --- Animation Delay --- */
-    document.addEventListener(&#x27;DOMContentLoaded&#x27;,()=&#x3E;{
-      document.querySelectorAll(&#x27;.card&#x27;).forEach((c,i)=&#x3E;{
-        c.style.animationDelay = &#x60;${i*0.1}s&#x60;;
+    document.addEventListener('DOMContentLoaded',()=>{
+      document.querySelectorAll('.card').forEach((c,i)=>{
+        c.style.animationDelay = `${i*0.1}s`;
       });
     });
-  &#x3C;/script&#x3E;&#x3C;/body&#x3E;
-&#x3C;/html&#x3E;
+  </script></body>
+        </html>

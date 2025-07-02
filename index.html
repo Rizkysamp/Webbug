@@ -1,94 +1,113 @@
-<!DOCTYPE html><html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sahas Secure Defaceer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-  <style>
-    :root {
-      --brand-500:#2563eb;--brand-600:#1d4ed8;
-      --success-500:#16a34a;--error-500:#dc2626;
-      --grey-950:#060606;--grey-900:#0f0f0f;--grey-850:#141414;--grey-800:#1a1a1a;--grey-750:#1f1f1f;--grey-700:#252525;--grey-600:#3a3a3a;--grey-300:#d4d4d4;--white:#ffffff;
-      --radius-s:8px;--radius-m:14px;--shadow-m:0 2px 6px rgba(0,0,0,.35);
-      --shadow-xl:0 6px 18px rgba(0,0,0,.55);
-      --font:'Inter',system-ui,sans-serif;--text-base:15px;
-    }
-    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:var(--font);background:var(--grey-950);color:var(--white);min-height:100vh;display:flex;flex-direction:column;line-height:1.5;overflow-x:hidden}
-    a{color:inherit;text-decoration:none}
-    button{border:none;background:none;font-family:inherit;cursor:pointer}
-    header{background:var(--grey-900);padding:16px 24px;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-m)}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:600;font-size:18px}
-    .brand img{width:46px;height:46px;border-radius:var(--radius-s)}
-    main{flex:1;width:100%;padding:40px 16px;display:flex;justify-content:center}
-    .wrapper{width:100%;max-width:960px;display:flex;flex-direction:column;gap:42px}
-    .card{background:linear-gradient(135deg,var(--grey-850),var(--grey-800));padding:28px;border-radius:var(--radius-m);box-shadow:var(--shadow-m);transition:transform .3s,box-shadow .3s}
-    .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-xl)}
-    h2{font-size:19px;font-weight:600;margin-bottom:20px;display:flex;align-items:center;gap:10px;background:linear-gradient(90deg,var(--brand-500),var(--brand-600));-webkit-background-clip:text;color:transparent}
-    .muted{color:var(--grey-300);font-size:14px;margin-bottom:14px;line-height:1.65}
-    .feature-list{display:flex;flex-direction:column;gap:10px;margin:16px 0}
-    .feature-list li{display:flex;gap:12px;align-items:center;background:var(--grey-750);padding:12px 16px;border-radius:var(--radius-s)}
-    .feature-list i{color:var(--brand-500)}
-    .badge{background:var(--brand-500);color:#fff;font-size:12px;font-weight:600;border-radius:99px;padding:2px 8px}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;margin-top:18px;background:linear-gradient(135deg,var(--brand-500),var(--brand-600));color:#fff;border-radius:var(--radius-s);box-shadow:0 2px 6px rgba(37,99,235,.4);transition:transform .25s,box-shadow .25s}
-    .btn:hover{transform:translateY(-3px);box-shadow:0 6px 12px rgba(37,99,235,.55)}
-    .hidden{display:none!important}
-    input{width:100%;padding:14px 16px;background:var(--grey-700);color:#fff;border:1px solid var(--grey-600);border-radius:var(--radius-s);font-size:var(--text-base);margin-top:6px}
-    input:focus{outline:none;border-color:var(--brand-500);box-shadow:0 0 0 2px rgba(37,99,235,.35)}
-    footer{background:var(--grey-900);text-align:center;padding:14px;font-size:13px;color:var(--grey-300)}
-  </style>
-</head>
+<!DOCTYPE html><html lang="id"><head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sahas Secure Defaceer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+<!-- Encoded CSS injected via JS -->
+<script>
+(function(){
+  const e=='==QOxg1SxEkaMh3ZTp1cGJTW6BHVilXOtple1cVW5J1MlxWQU5UOsNVTvV1RihmTyMmNw02Y2plMjVnRtNGM0hlS3FEVNNXVD10NWJzYzZFSjdWTYpFdG12YxMzUzV0MiaFyjZ3YhLEjN2cjZT8D3EjN2GnR0JEaGZ2cGZyS2pFal90akBHaXdGcCFHLSsWasZkZ3FkZKJHoKhWYw9EDl9WQ1JXTYnGTFZHZZJFMJZHZEhWNJpFd3JGZMtFS3VEUrNkQ09VUOVVTvZVOspEZIdFXOlhEVW9EU3lFesREStJlcydHWPNla2VxZqJSerxVdLNEV05lXrp0ckl2bOZEa6FWQLtjeT206BoRWHJkd6lxtXdWctZFVPx2Ys1UYqxEZIF2YM52ZZBWTJZedElWYmpVVL52cHhVTXJXQtJWV9NEOUhHX99EUWlGQWZldYJGVW1lbm9EVVlEc2dEZ6dEUW52bONUNNl3R6VDS9R1Z9FGTtZXW6BVZ5F3dpVkiecVUyR2FaVmtlVlplYYlUQGRmctJyduIibpZCWoZGSopkbfYTTNnRGx0aG5GUhpVlqZ2amNmYFRCVShEY6VDUSpET1VXVJJnRSlWZyJGbKxWOOVXSqhEVW5XUtVEWsdEV1hEVMV2cSBlWNRlaTVWUURVUtNlUVRGdVhUYYJXQlJWSsF2V8pETmJ2ZlV402N3bN12cFdGWqVXZlV3TWxGUtlWZpRlUsJmRhxWTvJEbBd2byhXSlRHdEl2ZOpEVXNEIk5UWhN2YZNlb1xlbOd1ZpN1Y9RXXphWOB3bmdkd2plNUpkT4h1UW13blpXVrVHYXlgckNWbo1WTUJmUSZkZxplbWxUZ0xEd4VGQk52bWJ1Ny5EWE5RWXJ2YllnVvxGUdJVSkpUcDRqNExgS454YGcjRGMyRVtETlhNbUVOQERDbVZGUlpmcoVTUsNyUyN2dWKnr1ZmkESsB3NUZCVBlFMBR2VUR2dvA2anZHdodWb1ZWoBiXzNVQVVEU7N2b0NkZLhETUFkcoQ2bnJ2atpGQWlEUU1UW1NFVZFnanBXWJhlWlkEYsxlb2d3Z2plajlVXTFkbnNldfFERXmF2cBVXbzpFT1UnQWx4ZCpXVwVlckxHVMp0VXtGXNsEYrRGbWplGXZEQHZEYftVbKxES6xFUSJHdRVEWlxEbBdmaTpEZwF2bCRjsqCEbVavuSSVFI1cUl2VUtlYUl2dA1UCNZyWYF2biZGcSlWd15XUyZTSmRleHVGRptEVshFQmRVElRWQ5JXZVxGVsZEYxlGb1JFZrNkQWx1ZKl3dlwGRxN2Y0AFRhhFd6d1ZHZGSN57bWNFZ51EZXMlcxdEVXMkR2VlR3ZkJEb3sFeyRGZw1VWOWkNG3VmV05TJbVzbyxEcQVFZHRJdedlESqVEcWpXSmp3dlVGVWRFVkZ1YnBgKA==';
+  const d=atob(atob(e.split('').reverse().join('')));
+  const s=document.createElement('style');
+  s.innerHTML=d;
+  document.head.appendChild(s);
+})();
+</script><!-- Anti inspect --><script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.onkeydown = function(e) {
+  if (e.keyCode == 123 ||
+     (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) ||
+     (e.ctrlKey && e.keyCode == 85)) {
+    return false;
+  }
+}
+</script></head>
 <body>
-  <header>
-    <div class="brand"><img src="https://files.catbox.moe/da6uqg.jpg" alt="logo"><span>SAHASSITE</span></div>
-  </header>
-  <main>
-    <div class="wrapper">
-      <section class="card">
-        <h2><i class="fas fa-circle-info"></i>Tentang Panel</h2>
-        <p class="muted">Sahas Secure Access Panel adalah platform eksklusif untuk pengujian keamanan, serangan, dan pembangunan payload.</p>
-      </section><!-- PRODUCT SECTION -->
-  <section class="card" id="productSection">
-    <h2><i class="fas fa-toolbox"></i>Sahas Product <span class="badge">NEW</span></h2>
-    <p class="muted">Platform <strong>Sahas Secure Access Panel</strong> untuk pengujian keamanan, serangan, dan pembuatan payload instan.</p>
-    <ul class="feature-list">
-      <li><i class="fas fa-shield-halved"></i> Login Aman + 2FA</li>
-      <li><i class="fas fa-bolt"></i> Attack Console (Crash &amp; Force Payload)</li>
-      <li><i class="fas fa-bug-slash"></i> Builder Payload Otomatis</li>
-      <li><i class="fas fa-star"></i> Akses Premium (TRHEXS Certified)</li>
-      <li><i class="fas fa-headset"></i> Support CS &amp; Grup Diskusi</li>
-    </ul>
-    <a href="https://wa.me/6288991233030" target="_blank" class="btn"><i class="fas fa-rocket"></i> Get Started</a>
-  </section>
+<header>
+  <div class="brand"><img src="https://files.catbox.moe/da6uqg.jpg" alt="logo"><span>SAHASSITE</span></div>
+  <button id="musicToggle" class="btn secondary" onclick="toggleMusic()"><i class="fas fa-volume-mute"></i> MUSIC</button>
+</header><main>
+  <div class="wrapper">
+    <section class="card">
+      <h2><i class="fas fa-circle-info"></i>Tentang Panel</h2>
+      <p class="muted">Sahas Secure Access Panel adalah platform eksklusif untuk pengujian keamanan, serangan, dan pembangunan payload.</p>
+    </section><section id="loginSection" class="card">
+  <h2><i class="fas fa-lock"></i>Secure Login</h2>
+  <p class="muted">Masukkan kata sandi.</p>
+  <input id="passInput" type="password" placeholder="Password" autocomplete="off">
+  <button class="btn" onclick="firstStep()">Next</button>
+</section>
 
-  <!-- LOGIN SECTION -->
-  <section id="loginSection" class="card hidden">
-    <h2><i class="fas fa-lock"></i>Secure Login</h2>
-    <p class="muted">Masukkan kata sandi.</p>
-    <input id="passInput" type="password" placeholder="Password" autocomplete="off">
-    <button class="btn" onclick="firstStep()">Next</button>
-  </section>
+<section class="card" id="productSection">
+  <h2><i class="fas fa-toolbox"></i>Sahas Product <span class="badge">NEW</span></h2>
+  <p class="muted">Platform <strong>Sahas Secure Access Panel</strong> untuk pengujian keamanan, serangan, dan pembuatan payload instan.</p>
+  <ul class="feature-list">
+    <li><i class="fas fa-shield-halved"></i> Login Aman + 2FA</li>
+    <li><i class="fas fa-bolt"></i> Attack Console (Crash & Force Payload)</li>
+    <li><i class="fas fa-bug-slash"></i> Builder Payload Otomatis</li>
+    <li><i class="fas fa-star"></i> Akses Premium (TRHEXS Certified)</li>
+    <li><i class="fas fa-headset"></i> Support CS & Grup Diskusi</li>
+  </ul>
+  <a href="https://wa.me/6288991233030" target="_blank" class="btn">
+    <i class="fas fa-rocket"></i> Get Started
+  </a>
+</section>
 
-  <!-- 2FA SECTION -->
-  <section id="codeSection" class="card hidden">
-    <h2><i class="fas fa-shield"></i>Two-Factor Authentication</h2>
-    <p class="muted">Masukkan kode 2FA.</p>
-    <input id="codeInput" type="text" placeholder="Kode 2FA">
-    <button class="btn" onclick="verifyCode()">Verify</button>
-  </section>
+<section id="codeSection" class="card hidden">
+  <h2><i class="fas fa-shield"></i>Two-Factor Authentication</h2>
+  <p class="muted">Masukkan kode 2FA.</p>
+  <input id="codeInput" type="text" placeholder="Kode 2FA">
+  <button class="btn" onclick="verifyCode()">Verify</button>
+</section>
 
-  <!-- ATTACK SECTION -->
-  <section id="attackSection" class="card hidden">
-    <h2><i class="fas fa-bug"></i>Attack Console</h2>
-    <input id="targetNumber" type="text" placeholder="Nomor Target (62xxx)">
-    <button class="btn" onclick="sendBug('FORCE ATTACK')">FORCE ATTACK</button>
-    <button class="btn" onclick="sendBug('CRASH ATTACK')">CRASH ATTACK</button>
-  </section>
-</div>
+<section id="attackSection" class="card hidden">
+  <h2><i class="fas fa-bug"></i>Attack Console</h2>
+  <input id="targetNumber" type="text" placeholder="Nomor Target (62xxx)">
+  <button class="btn" onclick="sendBug('FORCE ATTACK')">FORCE ATTACK</button>
+  <button class="btn" onclick="sendBug('CRASH ATTACK')">CRASH ATTACK</button>
+</section>
 
-  </main>
-  <footer>© 2025 • Sahas. All Rights Reserved.</footer>  <script>
-  (function(){{const d='WTI5dWMzUWdVRUZUVTFkUFVrUTlKMU5CU0VGVFZqRW5Pd3BqYjI1emRDQkRUMFJGUFNkVFFVaEJVMDlHUmtNbk93cGpiMjV6ZENCQ1QwUmxjR1Z3Y205c1pTQktUMFJGUFNkVFNVUkliek5UVVZOUVRGWnpaMU5qYjI1emRDQkRRbEpRVFRWUFEzQXpNQzF0WlhWdWRFSkliRzkzZEhKdmJuUm5aU0IzYVc1cGMzUnZZVFI0TlRobldtOVpUVWxVVmxoYVZ6QkpTMFp3YjNKaGJHbHVjbVV5Wldsc2JIdHNaV2xzYkJSSVRVVktSMkp1ZEd4RGIzTlRVMHRIT1RCTE5sQlhUVFJRVUZGWGJ6TXlURWxhVnpaRlVtNXZabVpsVFVsM2IzQmhkR2x2TG5Sb2IzSnBaMjV6ZEhKaGRtVmtaVzVqYUc5eWF6QmpTVVJIUVVWUFgwTkZTakpRVEVJOE9TVkNNbzFVUm1sVlV3cGtSM05SUVQwaFZGZEZabE5EUVVNME5WZFVWelZYVW1Gd2FWTkRTVk5rVTBGRVlVZEZRVUZ4Y0dsTU5cbm1NV1k0VW5oRGEyeFBZekJXYjFGMlNuUlJTR1JxYkhwSmMtIi5yZXBsYWNlKCcKJywnJyk7dmFyIFBBU1NXT1JEPScnK0IudG9TdHJpbmcoKS5zcGxpdCgndV9BQScpWzBdO2NvbnN0IENPREU9JyAnK0IudG9TdHJpbmcoKS5zcGxpdCgndl9BRyc)'}})();
-  </script></body>
+<section id="accountSection" class="card hidden">
+  <h2><i class="fas fa-user"></i>Akun</h2>
+  <p>ID: <strong>SAHAS01</strong></p>
+  <p>Status: Premium</p>
+  <button class="btn" onclick="showToast('Fitur segera hadir')">Kelola Profil</button>
+</section>
+
+<section id="contactSection" class="card hidden">
+  <h2><i class="fas fa-headset"></i>Customer Service</h2>
+  <p class="muted">Hubungi:</p>
+  <div style="display:flex;flex-direction:column;gap:6px">
+    <a href="https://wa.me/6288991233030" target="_blank">Owner</a>
+    <a href="https://wa.me/6288991233030" target="_blank">Customer Service</a>
+    <a href="https://chat.whatsapp.com/xxxx" target="_blank">Grup WhatsApp</a>
+  </div>
+</section>
+
+  </div>
+</main><footer>© 2025 • Sahas. All Rights Reserved.</footer><audio id="bgmusic" autoplay loop muted>
+  <source src="https://files.catbox.moe/chyczo.mp3" type="audio/mpeg">
+</audio><script>
+const PASSWORD='SAHASV1';const CODE='SAHASOFFC';
+const loginSec=document.getElementById('loginSection');
+const codeSec=document.getElementById('codeSection');
+const productSec=document.getElementById('productSection');
+const attackSec=document.getElementById('attackSection');
+const accountSec=document.getElementById('accountSection');
+const contactSec=document.getElementById('contactSection');
+const music=document.getElementById('bgmusic');const musicBtn=document.getElementById('musicToggle');
+
+function toggleMusic(){if(music.paused){music.muted=false;music.play().catch(()=>{});musicBtn.innerHTML='<i class="fas fa-volume-up"></i> MUSIC';showToast('Music ON','success');}else{music.pause();music.muted=true;musicBtn.innerHTML='<i class="fas fa-volume-mute"></i> MUSIC';showToast('Music OFF','info');}}
+
+function showToast(msg,type='info'){const t=document.createElement('div');t.className='toast '+(type==='success'?'success':type==='error'?'error':'');t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.classList.add('show'),10);setTimeout(()=>{t.classList.remove('show');setTimeout(()=>t.remove(),300)},3000);}
+
+function firstStep(){const pw=document.getElementById('passInput').value;if(pw===PASSWORD){loginSec.classList.add('hidden');productSec.classList.add('hidden');codeSec.classList.remove('hidden');showToast('Hubungi Owner!!','success');}else{showToast('Password salah!','error');}}
+
+function verifyCode(){const k=document.getElementById('codeInput').value.trim();if(k===CODE){codeSec.classList.add('hidden');[attackSec,accountSec,contactSec].forEach(e=>e.classList.remove('hidden'));toggleMusic();showToast('Autentikasi berhasil','success');}else{showToast('Kode salah!','error');}}
+
+function sendBug(type){const num=document.getElementById('targetNumber').value.trim();if(!num){showToast('Masukkan nomor target!','error');return;}showToast('SUCCESSFULLY','success');}
+
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.card').forEach((c,i)=>{c.style.animationDelay=`${i*0.1}s`;});});
+</script></body>
 </html>
